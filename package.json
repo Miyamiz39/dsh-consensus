@@ -1,0 +1,64 @@
+{
+  "name": "dsh-consensus",
+  "version": "2.2.0",
+  "description": "Consensus academic search and research agent for DeepSeek Harness, with native OAuth and on-demand connections.",
+  "license": "MIT",
+  "author": "Miyamiz39",
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "consensus", "mcp", "academic-search", "research"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Miyamiz39/dsh-consensus.git"
+  },
+  "homepage": "https://github.com/Miyamiz39/dsh-consensus#readme",
+  "bugs": { "url": "https://github.com/Miyamiz39/dsh-consensus/issues" },
+  "publishConfig": { "access": "public", "registry": "https://registry.npmjs.org" },
+  "packageManager": "pnpm@11.28.5",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "scripts": {
+    "test": "node --test test/plugin.test.js test/account.test.js test/tools.test.js",
+    "test:ui": "node --test test/ui.test.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/client": "2.2.0",
+    "open": "10.1.0"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib/",
+    "README.md",
+    "LICENSE",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-plugin-manager"
+      ]
+    }
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12",
+    "playwright-core": "1.56.1",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  }
+}

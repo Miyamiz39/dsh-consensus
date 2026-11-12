@@ -1,0 +1,4 @@
+# Native HTTP + OAuth; no connection, SDK loading, or sign-in during DSH startup.
+- insert:
+    - id: consensus-mcp
+      name: 'dsh-consensus'
