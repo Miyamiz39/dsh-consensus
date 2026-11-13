@@ -1,6 +1,6 @@
 {
   "meta": {
     "title": "Consensus Academic Research MCP",
-    "description": "Search academic papers, delegate research, and manage research threads. Native HTTP and OAuth with on-demand connections."
+    "description": "Search academic papers, delegate research, and manage research threads; results appear as paper cards in the conversation. Native HTTP and OAuth with on-demand connections."
   }
 }

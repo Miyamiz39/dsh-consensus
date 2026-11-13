@@ -1,6 +1,6 @@
 {
   "meta": {
     "title": "Consensus 学术研究 MCP",
-    "description": "检索学术论文、委托研究 Agent、管理研究任务。原生 HTTP 与 OAuth，按需连接 Consensus。"
+    "description": "检索学术论文、委托研究 Agent、管理研究任务；检索结果在对话中以论文卡片展示。原生 HTTP 与 OAuth，按需连接 Consensus。"
   }
 }

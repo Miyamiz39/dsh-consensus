@@ -1,6 +1,6 @@
 {
   "name": "dsh-consensus",
-  "version": "2.2.0",
+  "version": "2.4.0",
   "description": "Consensus academic search and research agent for DeepSeek Harness, with native OAuth and on-demand connections.",
   "license": "MIT",
   "author": "Miyamiz39",
@@ -22,7 +22,7 @@
     "./icon": "./icon.svg"
   },
   "scripts": {
-    "test": "node --test test/plugin.test.js test/account.test.js test/tools.test.js",
+    "test": "node --test test/plugin.test.js test/account.test.js test/tools.test.js test/papers.test.js test/turns.test.js test/client.test.js",
     "test:ui": "node --test test/ui.test.js"
   },
   "dependencies": {
