@@ -82,3 +82,5 @@ pnpm run test:ui
 ```
 
 功能测试使用本机 MCP/OAuth 模拟服务，覆盖五个工具、研究任务流程和账号操作。页面测试使用 Edge 验证登录交互、亮暗主题和移动布局。
+
+- [Consensus for dsh](https://github.com/Miyamiz39/dsh-consensus) - Consensus academic search and research agent for DeepSeek Harness.
